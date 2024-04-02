@@ -5,4 +5,4 @@ It holds all labs related to a capstone project, a grand finale of a 10-course I
 
 It includes every step of data-related work, starting with data collection and web scraping, and ending with creation of ML models and presentation of the findings.
 
-I used Python and SQL for this project. In Python, I also used these libraries, mainly: Pandas, Numpy, Matplotlib, Seaborn, Scikit-learn.
+Python and SQL are used for this project. In Python, several libraries are used throughout the project, mainly: Pandas, Numpy, Matplotlib, Seaborn, Scikit-learn, Plotly, Dash.
