@@ -68,6 +68,12 @@ def get_pie_chart(entered_site):
         # Create pie chart showing distribution of successful launches across launch sites
         fig = px.pie(names=success_counts.index,
                      values=success_counts.values,
+                     color = success_counts.index,
+                     color_discrete_map={
+                                'CCAFS LC-40':'lightcyan',
+                                'VAFB SLC-4E':'cyan',
+                                'CCAFS SLC-40':'royalblue',
+                                'KSC LC-39A':'darkblue'},
                      title='Distribution of Successful Launches Across Launch Sites'
                      )
 
@@ -83,8 +89,8 @@ def get_pie_chart(entered_site):
         fig = px.pie(names=['Success', 'Failure'],
                      values=[successes, failures],
                      title='Total Success Launches on {}'.format(entered_site),
-                     color=['red', 'green'],
-                     color_discrete_map={'Success': 'green', 'Failure': 'red'})
+                     color=['Success', 'Failure'],
+                     color_discrete_map={'Success': 'cyan', 'Failure': 'darkblue'})
 
         return fig
         # return the outcomes piechart for a selected site
